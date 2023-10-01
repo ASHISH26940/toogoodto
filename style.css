@@ -166,10 +166,20 @@ body {
     scale: 1.1;
 }
 
+/* .col1{
+    background-color: rgb(245, 223, 207);
+}
+.col{
+    background-color: rgb(195,216,197);
+}
+.col2{
+    background-color: rgb(255, 255, 255);
+} */
+
 #page2 .elem .dets {
     height: 2vw;
     border-radius: 50px;
-    width: 70%;
+    width: 50%;
     position: absolute;
     z-index: 9;
     background-color: rgb(195,216,197);
@@ -178,7 +188,7 @@ body {
 #page2 .elem .dets1 {
     height: 2vw;
     border-radius: 50px;
-    width: 70%;
+    width: 50%;
     position: absolute;
     z-index: 9;
     background-color: rgb(245, 223, 207);
@@ -186,16 +196,18 @@ body {
     font-weight: 50;
 }
 #page2 .elem .dets1 span {
-    padding-left: 8vw;
+    padding-left: 4vw;
 }
 #page2 .elem  li{
     padding-left: 1vw;
 }
 #page2 .elem .dets2 span {
-    padding-left: 8vw;
+    padding-left: 4vw;
 }
 
-.info{
+
+
+/* .info{
     background-color: rgb(195,216,197);
     width:80%;
     height:2vw;
@@ -207,22 +219,50 @@ body {
     opacity: 0;
     scale: 0;
 }
+.info1{
+    background-color: rgb(195,216,197);
+    width:80%;
+    height:2vw;
+    top:45%;
+    padding-bottom: 10vw;
+    z-index:8;
+    position: absolute;
+    border-radius: 50px;
+    opacity: 0;
+    scale: 0;
+}
+.info2{
+    background-color: rgb(195,216,197);
+    width:80%;
+    height:2vw;
+    top:45%;
+    padding-bottom: 10vw;
+    z-index:8;
+    position: absolute;
+    border-radius: 50px;
+    opacity: 0;
+    scale: 0;
+} */
 
 /* #tst:hover{
     padding-bottom: 10vw;
     padding-top: 2vw;
 } */
 
-
+#tst ul{
+    display:flex;
+    
+}
 
 #page2 .elem .dets2 {
     height: 2vw;
     border-radius: 50px;
-    padding-right: 1vw;
-    width: 70%;
+    padding-right: 7vw;
+    width: 50%;
     position: absolute;
-    z-index: 9;
     background-color: rgb(255, 255, 255);
+    z-index: 9;
+
 
 
 }
@@ -231,7 +271,7 @@ body {
     padding-left:2vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
 #tst ul{
@@ -383,7 +423,7 @@ body {
         width: 70%;
         position: absolute;
         z-index: 9;
-        background-color: rgb(229, 156, 186);
+        background-color: red;
 
     }
 

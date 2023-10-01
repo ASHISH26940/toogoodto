@@ -1,22 +1,25 @@
+    // var color1 = new Color(245, 223, 207);
+    // var color2 = new Color(195,216,197);
+    // var color3 = new Color(255, 255, 255);
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
   
-    // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
   
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector("#main"),
       smooth: true,
     });
-    // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+  
     locoScroll.on("scroll", ScrollTrigger.update);
   
-    // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+
     ScrollTrigger.scrollerProxy("#main", {
       scrollTop(value) {
         return arguments.length
           ? locoScroll.scrollTo(value, 0, 0)
           : locoScroll.scroll.instance.scroll.y;
-      }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+      }, 
       getBoundingClientRect() {
         return {
           top: 0,
@@ -25,16 +28,14 @@ function locomotiveAnimation() {
           height: window.innerHeight,
         };
       },
-      // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
       pinType: document.querySelector("#main").style.transform
         ? "transform"
         : "fixed",
     });
-  
-    // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
+
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   
-    // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ 
     ScrollTrigger.refresh();
   }
   locomotiveAnimation();
@@ -112,19 +113,17 @@ function locomotiveAnimation() {
         top: dets.y,
       });
     });
-    // document.querySelector("#child1").addEventListener("mouseenter",function(){
-  
-    // })
-  
-    // document.querySelector("#child1").addEventListener("mouseleave",function(){
-    //   gsap.to("#cursor",{
-    //     transform: 'translate(-50%,-50%) scale(0)'
-    //   })
-    // })
+
+
+
+    const colors = ["rgba(245, 223, 207)", "pink", "rgb(195,216,197)","yellow"];
+
     document.querySelectorAll(".child").forEach(function (elem) {
       elem.addEventListener("mouseenter", function () {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
         gsap.to("#cursor", {
           transform: "translate(-50%,-50%) scale(1)",
+          backgroundColor:randomColor
         });
       });
       elem.addEventListener("mouseleave", function () {
@@ -135,17 +134,83 @@ function locomotiveAnimation() {
     });
   }
   cursorAnimation();
+    // let col= document.querySelector(".col");
+    // let col1= document.querySelector(".col1");
+    // let col2= document.querySelector(".col2");
+    // col.style.backgroundColor="rgb(195,216,197)";
+    //   col1.style.backgroundColor="rgb(245, 223, 207)";
+    //   col2.style.backgroundColor="rgb(255, 255, 255)";
+
   
-  function tsted()
-  {
-  var tsts=document.querySelector("#tst");
-  var info=document.querySelector(".info");
-  tsts.addEventListener("mouseenter", function () {
-    gsap.to(info, {
-      scale: 1,
-      opacity: 1,
-    });
-  });
+    function tsted() {
+      let tsts = document.querySelectorAll("#tst");
+      var info = document.querySelector(".info");
+    
+      tsts.forEach((tst, index) => {
+        // tst[0].style.backgroundColor="rgb(195, 216, 197)";
+        // tst[1].style.backgroundColor="rgb(245, 223, 207)";
+        // tst[2].style.backgroundColor="rgb(255, 255, 255)";
+        tst.addEventListener("mouseenter", function () {
+          // Set CSS properties for mouseenter event
+          switch (index) {
+            case 0:
+              tst.style.backgroundColor = "rgb(195, 216, 197)";
+              break;
+            case 1:
+              tst.style.backgroundColor = "rgb(245, 223, 207)";
+              break;
+            case 2:
+              tst.style.backgroundColor = "rgb(255, 255, 255)";
+              break;
+            // Add more cases for additional elements and colors
+            default:
+              break;
+          }
+          
+          tst.style.width = "50%";
+          tst.style.height = "2vw";
+          tst.style.paddingTop = "2vw";
+          tst.style.top = "48%";
+          tst.style.paddingBottom = "10vw";
+          tst.style.zIndex = "8";
+          tst.style.position = "absolute";
+          tst.style.borderRadius = "25px";
+        });
+    
+        tst.addEventListener("mouseleave", function () {
+          // Set CSS properties for mouseleave event to revert to original form
+          switch (index) {
+            case 0:
+              tst.style.backgroundColor = "rgb(195, 216, 197)";
+              break;
+            case 1:
+              tst.style.backgroundColor = "rgb(245, 223, 207)";
+              break;
+            case 2:
+              tst.style.backgroundColor = "rgb(255, 255, 255)";
+              break;
+            // Add more cases for additional elements and colors
+            default:
+              break;
+          }
+          tst.style.height = "2vw";
+          tst.style.borderRadius = "50px";
+          tst.style.width = "50%";
+          tst.style.paddingTop = 0;
+          tst.style.paddingBottom = "0vw";
+          tst.style.position = "absolute";
+          tst.style.zIndex = "9";
+          tst.style.backgroundColor = "rgb(195, 216, 197)"; // Set the original color
+        });
+      });
+    }
+    
+    tsted();
+    
+    
+
+  function page2boxes(){
+    let tsts = document.querySelectorAll("#tst");
+
   }
-  tsted()
-  
+  page2boxes();
