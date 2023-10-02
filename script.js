@@ -116,7 +116,7 @@ function locomotiveAnimation() {
 
 
 
-    const colors = ["rgba(245, 223, 207)", "pink", "rgb(195,216,197)","yellow"];
+    const colors = ["rgba(245, 223, 207)", "pink", "rgb(195,216,197)"];
 
     document.querySelectorAll(".child").forEach(function (elem) {
       elem.addEventListener("mouseenter", function () {
