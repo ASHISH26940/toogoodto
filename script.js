@@ -152,20 +152,20 @@ function locomotiveAnimation() {
         // tst[2].style.backgroundColor="rgb(255, 255, 255)";
         tst.addEventListener("mouseenter", function () {
           // Set CSS properties for mouseenter event
-          switch (index) {
-            case 0:
-              tst.style.backgroundColor = "rgb(195, 216, 197)";
-              break;
-            case 1:
-              tst.style.backgroundColor = "rgb(245, 223, 207)";
-              break;
-            case 2:
-              tst.style.backgroundColor = "rgb(255, 255, 255)";
-              break;
-            // Add more cases for additional elements and colors
-            default:
-              break;
-          }
+          // switch (index) {
+          //   case 0:
+          //     tst.style.backgroundColor = "rgb(195, 216, 197)";
+          //     break;
+          //   case 1:
+          //     tst.style.backgroundColor = "rgb(245, 223, 207)";
+          //     break;
+          //   case 2:
+          //     tst.style.backgroundColor = "rgb(255, 255, 255)";
+          //     break;
+          //   // Add more cases for additional elements and colors
+          //   default:
+          //     break;
+          // }
           
           tst.style.width = "50%";
           tst.style.height = "2vw";
@@ -193,6 +193,9 @@ function locomotiveAnimation() {
             default:
               break;
           }
+          // tst[0].style.backgroundColor = "rgb(195, 216, 197)";
+          // tst[1].style.backgroundColor = "rgb(245, 223, 207)";
+          // tst[2].style.backgroundColor = "rgb(255, 255, 255)";
           tst.style.height = "2vw";
           tst.style.borderRadius = "50px";
           tst.style.width = "50%";
@@ -200,7 +203,7 @@ function locomotiveAnimation() {
           tst.style.paddingBottom = "0vw";
           tst.style.position = "absolute";
           tst.style.zIndex = "9";
-          tst.style.backgroundColor = "rgb(195, 216, 197)"; // Set the original color
+          // tst.style.backgroundColor = "rgb(195, 216, 197)"; // Set the original color
         });
       });
     }

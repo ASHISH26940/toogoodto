@@ -475,6 +475,93 @@ body {
     font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 }
 
+/* page5
+ */
+
+
+ /* page6 */
+ .page6{
+    min-height: 120vh;
+    width: 100%;
+    /* background-color: pink; */
+    position: relative;
+    text-align: center;
+    padding-top: 5vw;
+ }
+ .little-moredec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+    color:gray;
+    margin-top:6vw;
+    /* background-color: pink; */
+ }
+
+ .sub-head6-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .sub-head6-part li{
+    text-decoration: none;
+    list-style: none;
+    padding:0 2vw;
+ }
+ .nitty-grit{
+    text-align: right;
+ }
+ .cnt-us-part{
+    text-align: left;
+
+ }
+ .cnt-us-part h4{
+    padding:4vw 2vw;
+    color:gray;
+    text-transform: capitalize;
+ }
+ .nitty-grit h4{
+    padding: 4vw 2vw;
+    color:gray;
+ }
+ .subhead6{
+    text-align: left;
+    width:96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2vw;
+    /* background-color: red; */
+    margin-bottom: 8vw;
+    font-size: 1.9vw;
+    border-bottom: 1px solid #222;
+ }
+
+ .sub-head6-part img{
+    /* object-fit: cover; */
+    width:15%;
+    border: none;
+    height:15%;
+    mix-blend-mode: multiply;
+ }
+
+ .last-but-not-the-least{
+    display: flex;
+    justify-content: center;
+ }
+ .flex5{
+    width:70%;
+    font-family: 'gilroy';
+    margin-top: 3vw;
+ }
+
+/* .line6{
+    
+    width:100%;
+    height: 1vw;
+    border-radius: 10px solid #222;
+ } */
 
 @media (max-width:600px) {
 
