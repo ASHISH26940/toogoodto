@@ -1,1 +1,3 @@
-# Too-good-Clone : - [To-good-co](Too-good-co](https://too-good-co-clone.vercel.app/)https://too-good-co-clone.vercel.app/)
+# To-good-clone
+
+A clone of a awwarded with a twist to its design .
