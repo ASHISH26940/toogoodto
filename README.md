@@ -1,3 +1,3 @@
 # To-good-clone
 
-A clone of a awwarded with a twist to its design .
+A clone of an awwarded website with a twist to its design.
