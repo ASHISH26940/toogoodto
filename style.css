@@ -472,7 +472,15 @@ body {
     text-align: left;
     font-size: 1.5vw;
 }
-
+.subhead6 input{
+    border: none;
+    outline: none;
+    color: #3c3b3a;
+    font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
 .img2 img{
     width:44%;
     height:100%;
