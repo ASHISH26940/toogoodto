@@ -317,18 +317,6 @@ body {
     height: 100%;
 } */
 
-.cursor{
-    width: 250px;
-    height: 250px;
-    background-color: rgb(255, 238, 208);
-    border-radius: 50%;
-    position: fixed;
-    transform: translate(-50%,-50%) scale(0);
-}
-.cursor-pointer {
-    cursor: pointer;
-  }
-  
 .page3{
     min-height: 120vh;
     width: 100%;
@@ -472,7 +460,15 @@ body {
     text-align: left;
     font-size: 1.5vw;
 }
-
+.subhead6 input{
+    border: none;
+    outline: none;
+    color: #3c3b3a;
+    font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
 .img2 img{
     width:44%;
     height:100%;
