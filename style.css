@@ -432,14 +432,20 @@ body {
     font-family:' gilroy';
     padding:0 2.5vw;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10vw;
     /* background-color: red; */
 }
 .heading-page-3{
-    width:40vw;
+    width:45vw;
     font-weight:800;
     text-transform: capitalize;
     font-size: 1.6vw;
+}
+.heading-page-3 h1 {
+    font-family: Futura;
+    font-size: 3.5vw;
+    line-height: 55px;
 }
 .txt-page-3{
     width:33vw;
@@ -448,13 +454,18 @@ body {
     font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 }
 .txt-page-3 p{
-    font-weight: bold;
-    text-transform: capitalize;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 }
 #line{
-    border: .6px solid #222;
-    width:40%;
-    margin-top:.4vh;
+    /* border: 0.5px solid #222; */
+    height: 0.1px;
+    background: #000;
+    width:33%;
+    /* margin-top:.4vh; */
 }
 
 /* Page4 */
