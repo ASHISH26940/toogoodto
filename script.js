@@ -225,7 +225,7 @@
       })
     })
 
-document.querySelectorAll(".flex1").forEach(function (element) {
+document.querySelectorAll(".img").forEach(function (element) {
   element.addEventListener("mouseenter", function () {
     gsap.to(".cursor", {
       transform: `translate(-50%, -50%) scale(1)`,
