@@ -415,6 +415,9 @@ body {
     height:4vw;
     border-radius: 25px;
     color: #fff;
+    font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
     background-color: #222;
 }
 .subtxt{
