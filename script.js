@@ -217,3 +217,26 @@
   
     }
     page2boxes();
+
+    document.addEventListener("mousemove", function (dets) {
+      gsap.to(".cursor", {
+        left:dets.x,
+        top:dets.y,
+      })
+    })
+
+document.querySelectorAll(".img").forEach(function (element) {
+  element.addEventListener("mouseenter", function () {
+    gsap.to(".cursor", {
+      transform: `translate(-50%, -50%) scale(1)`,
+    });
+    element.classList.add("cursor-pointer");
+  });
+
+  element.addEventListener("mouseleave", function () {
+    gsap.to(".cursor", {
+      transform: `translate(-50%, -50%) scale(0)`,
+    });
+    element.classList.remove("cursor-pointer");
+  });
+});
