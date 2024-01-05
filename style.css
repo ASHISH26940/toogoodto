@@ -569,13 +569,39 @@ body {
 
  /* page6 */
  .page6{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     min-height: 120vh;
     width: 100%;
-    /* background-color: pink; */
     position: relative;
     text-align: center;
     padding-top: 5vw;
  }
+
+.black-brush{
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.dub-contain6{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
  .little-moredec{
     display: flex;
     align-items: center;
@@ -606,12 +632,14 @@ body {
  }
  .cnt-us-part h4{
     padding:4vw 2vw;
-    color:gray;
+    color:white;
     text-transform: capitalize;
+    font-weight: bolder;
  }
  .nitty-grit h4{
     padding: 4vw 2vw;
-    color:gray;
+    color:white;
+    font-weight: bolder;
  }
  .subhead6{
     text-align: left;
@@ -624,6 +652,7 @@ body {
     margin-bottom: 8vw;
     font-size: 1.9vw;
     border-bottom: 1px solid #222;
+    position: relative;
  }
 
  .sub-head6-part img{
@@ -642,6 +671,10 @@ body {
     width:70%;
     font-family: 'gilroy';
     margin-top: 3vw;
+ }
+
+ .invert{
+    filter: invert(100%);
  }
 
 /* .line6{
