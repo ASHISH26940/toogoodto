@@ -781,3 +781,42 @@ body {
     }
 
 }
+
+#links{
+    display: flex;
+}
+
+.shop-catering-donate-buttons{
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.shop-catering-donate-buttons:hover{
+    transform: scale(1.1);
+}
+
+#icons{
+    display: flex;
+}
+
+.menu-cart-icons{
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-cart-icons:hover{
+    transform: scale(1.2);
+}
+
+#btn{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#btn:hover{
+    transform: scale(1.05);
+}
