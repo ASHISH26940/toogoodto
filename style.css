@@ -432,14 +432,20 @@ body {
     font-family:' gilroy';
     padding:0 2.5vw;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10vw;
     /* background-color: red; */
 }
 .heading-page-3{
-    width:40vw;
+    width:45vw;
     font-weight:800;
     text-transform: capitalize;
     font-size: 1.6vw;
+}
+.heading-page-3 h1 {
+    font-family: Futura;
+    font-size: 3.5vw;
+    line-height: 55px;
 }
 .txt-page-3{
     width:33vw;
@@ -448,13 +454,18 @@ body {
     font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 }
 .txt-page-3 p{
-    font-weight: bold;
-    text-transform: capitalize;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-family:"Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
 }
 #line{
-    border: .6px solid #222;
-    width:40%;
-    margin-top:.4vh;
+    /* border: 0.5px solid #222; */
+    height: 0.1px;
+    background: #000;
+    width:33%;
+    /* margin-top:.4vh; */
 }
 
 /* Page4 */
@@ -557,81 +568,99 @@ body {
 
 
  /* page6 */
+ 
+ .brush{
+    background-image: url('./assests/img/brush.svg');
+    height: 100%;
+    background-size: cover;
+ }
+
  .page6{
-    min-height: 120vh;
-    width: 100%;
-    /* background-color: pink; */
     position: relative;
-    text-align: center;
-    padding-top: 5vw;
- }
- .little-moredec{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:2vw;
-    color:gray;
-    margin-top:6vw;
-    /* background-color: pink; */
- }
-
- .sub-head6-part{
-    display: flex;
+    flex-direction: column;
+    height: 100vh;
     align-items: center;
     justify-content: space-between;
+    color: #F7F7F7;
  }
 
- .sub-head6-part li{
-    text-decoration: none;
+ .page6-head{
+    position: relative;
+    display: flex;
+    gap: 20px;
+ }
+
+ .ri-arrow-right-line{
+    position: relative;
+    top: 0.01vh;
+    font-size: 2.5rem;
+ }
+
+ .l-items{
+    display: flex;
+    position: absolute;
+    gap: 50vh;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 30vh;
+    
+    width: 100vw;
+ }
+
+ .connect-with-us{
+    position: absolute;
+    right: 85%;
+ }
+
+ .connect-with-us > ul > li{
     list-style: none;
-    padding:0 2vw;
- }
- .nitty-grit{
-    text-align: right;
- }
- .cnt-us-part{
-    text-align: left;
-
- }
- .cnt-us-part h4{
-    padding:4vw 2vw;
-    color:gray;
-    text-transform: capitalize;
- }
- .nitty-grit h4{
-    padding: 4vw 2vw;
-    color:gray;
- }
- .subhead6{
-    text-align: left;
-    width:96%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 2vw;
-    /* background-color: red; */
-    margin-bottom: 8vw;
-    font-size: 1.9vw;
-    border-bottom: 1px solid #222;
  }
 
- .sub-head6-part img{
-    /* object-fit: cover; */
-    width:15%;
-    border: none;
-    height:15%;
-    mix-blend-mode: multiply;
+ .two-good-svg{
+    position: absolute;
  }
 
- .last-but-not-the-least{
+ .nitty-gritties{
+    position: absolute;
+    left: 85%;
+ }
+
+ .nitty-gritties > ul > li{
+    list-style: none;
+ }
+
+ .two-good-svg > img{
+    height: 26vh;
+    filter: invert(100%);
+ }
+
+ .terms-and-conditions{
+    position: absolute;
     display: flex;
     justify-content: center;
+    gap: 10vw;
+    top: 55vh;
  }
- .flex5{
-    width:70%;
-    font-family: 'gilroy';
-    margin-top: 3vw;
+
+.end-note{
+    position: relative;
+    bottom: 5vh;
+    /* left: 10vw;
+    right: 10vw; */
+}
+
+ .last-text{
+    text-align: center;
  }
+
+ /* .page6 > .vidplay {
+    width: 100%;
+    height: 100%;
+    display: block;
+} */
+
+
 
 /* .line6{
     
