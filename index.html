@@ -15,8 +15,8 @@
     <div class="cursor"></div>
     <div id="nav">
         <div id="nav-part1">
-            <svg id="twogood" width="106" height="83" viewBox="0 0 106 83" fill="none" xmlns="http://www.w3.org/2000/svg"
-                style="transform: translate(0px, 0px);">
+            <svg id="twogood" width="106" height="83" viewBox="0 0 106 83" fill="none"
+                xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px);">
                 <g clip-path="url(#clip0_2228_162)">
                     <path d="M5.50062 6.4473H0V0.557617H17.7807V6.4473H12.2464V25.4842H5.50062V6.4473Z"
                         fill="currentColor">
@@ -55,8 +55,8 @@
                     </clipPath>
                 </defs>
             </svg>
-            <svg id="twogoodlogo" width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="go1438215768" style="transform: translate(0px, 0px);">
+            <svg id="twogoodlogo" width="62" height="63" viewBox="0 0 62 63" fill="none"
+                xmlns="http://www.w3.org/2000/svg" class="go1438215768" style="transform: translate(0px, 0px);">
                 <path
                     d="M46.8316 0C42.9105 0 39.1501 1.59236 36.3775 4.42677C33.605 7.26119 32.0474 11.1055 32.0474 15.114C32.0474 19.1224 33.605 22.9667 36.3775 25.8011C39.1501 28.6355 42.9105 30.2279 46.8316 30.2279C50.7526 30.2279 54.513 28.6355 57.2856 25.8011C60.0582 22.9667 61.6158 19.1224 61.6158 15.114C61.6158 11.1055 60.0582 7.26119 57.2856 4.42677C54.513 1.59236 50.7526 0 46.8316 0Z"
                     fill="currentColor"></path>
@@ -75,15 +75,25 @@
         </div>
         <div id="nav-part2">
             <div id="links">
-                <div class="shop-catering-donate-buttons"><a href="#">Shop</a></div>
-                <div class="shop-catering-donate-buttons"><a href="#">Catering</a></div>
-                <div class="shop-catering-donate-buttons"><a href="#">Donate</a></div>
+                <div class="shop-catering-donate-buttons hideNavbarOption"><a href="#">Shop</a></div>
+                <div class="shop-catering-donate-buttons hideNavbarOption"><a href="#">Catering</a></div>
+                <div class="shop-catering-donate-buttons hideNavbarOption"><a href="#">Donate</a></div>
             </div>
             <div id="icons">
-                <div class="menu-cart-icons"><i class="ri-menu-fill"></i></div>
+
+                <div class="menu-cart-icons menu" onclick="showSidebar()"><i class="ri-menu-fill" id="menu-icon"
+                        width="24" height="24"></i></div>
+                <ul class="sidebar">
+                    <li class="close-menu" onclick="hideSidebar()"><i class="ri-close-fill menu-cart-icons "
+                            id="menu-icon-close"></i></li>
+                    <li class="hover_effect"><a href="#">Shop</a></li>
+                    <li class="hover_effect"><a href="#">Catering</a></li>
+                    <li class="hover_effect"><a href="#">Donate</a></li>
+                </ul>
                 <div class="menu-cart-icons"><i class="ri-shopping-cart-2-line"></i></div>
-            </div> 
+            </div>
         </div>
+
     </div>
     <div id="cursor"></div>
     <div id="main">
@@ -109,8 +119,8 @@
                 </div>
 
                 <div class="info">
-                    
-                </div> 
+
+                </div>
             </div>
             <div id="elem2" class="elem">
                 <img data-scroll data-scroll-speed="1"
@@ -118,26 +128,30 @@
                     alt="">
                 <div data-scroll data-scroll-speed="-2" class="dets1" id="tst" class="col1">
                     <ul>
-                        <div><li>
-                            Shop
-                        </li></div>
+                        <div>
+                            <li>
+                                Shop
+                            </li>
+                        </div>
                         <div><span>Pantry</span></div>
                     </ul>
                     <i class="ri-arrow-right-line"></i>
                 </div>
-                 <div class="info1">
-                    
-                </div> 
+                <div class="info1">
+
+                </div>
             </div>
             <div id="elem3" class="elem">
                 <img data-scroll data-scroll-speed="1"
                     src="https://cdn.sanity.io/images/w8f1ak3c/production/d3151106849ff2494d66916cf554c68a0603444d-902x1500.png/Rectangle%20220.png?rect=1,0,900,1500&w=640&h=1067&fit=min&auto=format"
-                    alt="" >
+                    alt="">
                 <div data-scroll data-scroll-speed="-2" class="dets2" id="tst" class="col2">
                     <ul>
-                        <div><li>
-                            Shop
-                        </li></div>
+                        <div>
+                            <li>
+                                Shop
+                            </li>
+                        </div>
                         <div><span>Bath</span></div>
                     </ul>
                     <i class="ri-arrow-right-line"></i>
@@ -179,20 +193,25 @@
                 <h1>WE BELIEVE IN PEOPLE, UNTIL THEY BELIEVE IN THEMSELVES AGAIN.</h1>
             </div>
             <div class="txt-page-3">
-                Everything we do is designed to rebuild self worth and independence, in order to break free from the cycle of disadvantage. <br><br> With every purchase you make with us, you're helping to change the course of someone's life; you're walking alongside vulnerable women as they find their way home again.  <br><br>
+                Everything we do is designed to rebuild self worth and independence, in order to break free from the
+                cycle of disadvantage. <br><br> With every purchase you make with us, you're helping to change the
+                course of someone's life; you're walking alongside vulnerable women as they find their way home again.
+                <br><br>
                 <p>SHOP TO SUPPORT</p>
                 <div id="line"></div>
             </div>
         </div>
-            <div class="page3">
+        <div class="page3">
             <div class="img">
                 <div class="packet">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format" alt="">
+                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                        alt="">
                     <div class="overlay-content">
                         <h1 class="overlay-head">THE LOVE + CARE PACK</h1>
                         <p class="overlay-text">
                             <br>
-                            Natural ingredients gently cleanse and refresh, whilst<br>our signature Cedarwood & Cinnamon scent<br>creates a calming, aromatherapeutic<br>experience to relieve stress<br>and anxiety.
+                            Natural ingredients gently cleanse and refresh, whilst<br>our signature Cedarwood & Cinnamon
+                            scent<br>creates a calming, aromatherapeutic<br>experience to relieve stress<br>and anxiety.
                         </p>
                         <br>
                         <img src="./assests/img/fwdarr.png" style="width: 60px; height: 60px;" alt="">
@@ -202,12 +221,14 @@
             </div>
             <div class="img">
                 <div class="packet">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=1024&h=1024&auto=format" alt="">
+                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=1024&h=1024&auto=format"
+                        alt="">
                     <div class="overlay-content">
                         <h1 class="overlay-head">TWO GOOD TOTE BAG</h1>
                         <p class="overlay-text">
                             <br>
-                            Made from 100% organic cotton, the trusty Two Good<br>Tote Bag has been reimagined to offer a spacious<br>design with internal pockets, sturdy<br>handles and a sleek aesthetic.
+                            Made from 100% organic cotton, the trusty Two Good<br>Tote Bag has been reimagined to offer
+                            a spacious<br>design with internal pockets, sturdy<br>handles and a sleek aesthetic.
                         </p>
                         <br>
                         <img src="./assests/img/fwdarr.png" style="width: 60px; height: 60px;" alt="">
@@ -217,12 +238,14 @@
             </div>
             <div class="img">
                 <div class="packet">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format" alt="">
+                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format"
+                        alt="">
                     <div class="overlay-content">
                         <h1 class="overlay-head">NOURISH & SOOTHE HAND LOTION</h1>
                         <p class="overlay-text">
                             <br>
-                            Enriched with Shea Butter and Macadamia Oil to<br>nourish and soothe, our hand lotion has been<br>carefully crafted to inspire a moment<br>of care and luxury.
+                            Enriched with Shea Butter and Macadamia Oil to<br>nourish and soothe, our hand lotion has
+                            been<br>carefully crafted to inspire a moment<br>of care and luxury.
                         </p>
                         <br>
                         <img src="./assests/img/fwdarr.png" style="width: 60px; height: 60px;" alt="">
@@ -232,18 +255,20 @@
             </div>
             <div class="img">
                 <div class="packet">
-                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/02240d01db2e8bdc5c630e9832ff7e0c7614f733-1876x1876.png/Cookbook-Two-Recipes-For-Resilience-Two-Good-Co.png?w=1024&h=1024&auto=format" alt="">
+                    <img src="https://cdn.sanity.io/images/w8f1ak3c/production/02240d01db2e8bdc5c630e9832ff7e0c7614f733-1876x1876.png/Cookbook-Two-Recipes-For-Resilience-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                        alt="">
                     <div class="overlay-content">
                         <h1 class="overlay-head">COOKBOOK TWO</h1>
                         <p class="overlay-text">
                             <br>
-                            Recipes for resilience. Stories of courage. A collection<br>of moments that celebrate that one good meal that<br>has the potential to #changethecourse of<br>someone’s life for good.
+                            Recipes for resilience. Stories of courage. A collection<br>of moments that celebrate that
+                            one good meal that<br>has the potential to #changethecourse of<br>someone’s life for good.
                         </p>
                         <br>
                         <img src="./assests/img/fwdarr.png" style="width: 60px; height: 60px;" alt="">
                     </div>
                 </div>
-                <h1>COOKBOOK TWO</h1>     
+                <h1>COOKBOOK TWO</h1>
             </div>
         </div>
 
@@ -269,14 +294,20 @@
                 </div>
             </div>
             <button type="button" id="btn">Send your own message</button>
-            <div class="subtxt"><div class="flex4">Sometimes it's the smallest actions that can make the biggest impact.</div></div>
+            <div class="subtxt">
+                <div class="flex4">Sometimes it's the smallest actions that can make the biggest impact.</div>
+            </div>
         </div>
 
         <div class="page5">
             <div class="sec1">
                 <div class="subhead-sec1">OUR IMPACT.</div>
                 <div class="main-sec1">
-                    The thing is, we don't save anyone. <br><br> What we do is provide a safe space for women to change the course of their own lives. <br><br>  After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for independence. We believe that through experiences that promote love and respect, we can spark and nurture a sense of self-worth for those on the path of healing.
+                    The thing is, we don't save anyone. <br><br> What we do is provide a safe space for women to change
+                    the course of their own lives. <br><br> After many years of living in crisis, abuse and complex
+                    trauma, restoring self-worth is foundational for independence. We believe that through experiences
+                    that promote love and respect, we can spark and nurture a sense of self-worth for those on the path
+                    of healing.
                 </div>
                 <div class="part3">
                     Here How We Do it
@@ -284,13 +315,15 @@
                 </div>
             </div>
             <div class="img2">
-                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format" alt=""/>
-                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format" alt=""/>
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/943f8f43b76b4e030f41deddca1edd44170fee39-5504x8256.jpg/Christina-Maria-Jes-Lindsay-9143.jpg?fp-x=0.5&fp-y=0.5&w=640&h=947&fit=crop&crop=focalpoint&auto=format"
+                    alt="" />
+                <img src="https://cdn.sanity.io/images/w8f1ak3c/production/84da7b8b510e006ce0ca22769d93bb6c044945f6-5504x8256.jpg/Patricia-Work-Work-Good-Stories-Two-Good-Co.jpg?rect=0,56,5504,8144&w=640&h=947&fit=min&auto=format"
+                    alt="" />
             </div>
         </div>
 
         <br>
-       <div class="brush">
+        <div class="brush">
             <div class="page6">
                 <div class="page6-head">
                     <h1>ENTER YOUR EMAIL FOR GOOD <i class="ri-arrow-right-line"></i></h1>
@@ -303,7 +336,7 @@
                             <br>
                             <li>Facebook</li>
                             <li>Instagram</li>
-                            <li>Twitter</li> 
+                            <li>Twitter</li>
                             <li>LinkedIn</li>
                             <li>YouTube</li>
                         </ul>
@@ -330,7 +363,14 @@
                 </div>
                 <div class="end-note">
                     <p class="last-text">
-                        We are proud and privileged to have our home on this land, and to be able to continue the long tradition of community coming together around food, begun thousands of years ago by First Nations peoples. As we stand together on this unceded land, we acknowledge our First Nations people, are the original custodians of this land, and we recognise their deep connection to land, water, sky and community which continues today. We pay our deep respects to community elders, past, present and emerging, for they hold the memories, the traditions, the culture and hopes of Aboriginal and Torres Strait Islander peoples. Always was, always will be Aboriginal land.
+                        We are proud and privileged to have our home on this land, and to be able to continue the long
+                        tradition of community coming together around food, begun thousands of years ago by First
+                        Nations peoples. As we stand together on this unceded land, we acknowledge our First Nations
+                        people, are the original custodians of this land, and we recognise their deep connection to
+                        land, water, sky and community which continues today. We pay our deep respects to community
+                        elders, past, present and emerging, for they hold the memories, the traditions, the culture and
+                        hopes of Aboriginal and Torres Strait Islander peoples. Always was, always will be Aboriginal
+                        land.
                     </p>
                 </div>
             </div>
@@ -344,6 +384,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="navbar.js"></script>
     <script src="script.js"></script>
 </body>
 
