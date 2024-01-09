@@ -594,15 +594,14 @@ body {
     background-image: url('./assests/img/brush.svg');
     height: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .page6 {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-between;
+    /* height: 100vh; */
     color: #F7F7F7;
 }
 
@@ -610,6 +609,11 @@ body {
     position: relative;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+.page6-head h1{
+    text-align: center;
 }
 
 .ri-arrow-right-line {
@@ -620,32 +624,32 @@ body {
 
 .l-items {
     display: flex;
-    position: absolute;
-    gap: 50vh;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 30vh;
-
-    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.connect-with-us {
+/* .connect-with-us {
     position: absolute;
     right: 85%;
-}
+} */
 
 .connect-with-us>ul>li {
     list-style: none;
 }
 
-.two-good-svg {
+/* .two-good-svg {
     position: absolute;
-}
+} */
 
-.nitty-gritties {
+/* .nitty-gritties {
     position: absolute;
     left: 85%;
-}
+} */
 
 .nitty-gritties>ul>li {
     list-style: none;
@@ -657,22 +661,31 @@ body {
 }
 
 .terms-and-conditions {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-    top: 55vh;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ margin-bottom: 30px;
+ gap: 10px;
 }
 
 .end-note {
-    position: relative;
-    bottom: 5vh;
-    /* left: 10vw;
-    right: 10vw; */
+   padding-left: 20px;
+   padding-right: 20px;
+   overflow-wrap: break-word;
+   text-align: center;
+   margin-top: 30px;
 }
 
 .last-text {
     text-align: center;
+}
+@media(max-width:481px){
+    .l-items{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* .page6 > .vidplay {
