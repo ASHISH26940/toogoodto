@@ -970,7 +970,9 @@ body {
     transform: scale(1.05);
 }
 
-
+.text{
+    color:var(--primary-color4);
+}
 #icon{
     width:25px;
     cursor: pointer;
@@ -984,6 +986,7 @@ body {
     --primary-color2: #333;
     --secondary-color2: #222;
     --primary-color3: #fff;
+    --primary-color4:#000;
 }
 
 .dark-theme{
@@ -992,9 +995,13 @@ body {
     --primar-color2:white;
     --secondary-color2:#F7F7F7;
     --primary-color3:black;
+    --primary-color4:#000;
 
 }
 
 .ri-shopping-cart-2-line{
     color:black;
+}
+.ri-arrow-right-line{
+    color: var(--primary-color4);
 }
