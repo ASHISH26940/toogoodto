@@ -1005,3 +1005,16 @@ body {
 .ri-arrow-right-line{
     color: var(--primary-color4);
 }
+
+#page2 .elem .dets,#page2 .elem .dets1,#page2 .elem .dets2{
+    box-sizing: border-box;
+    height: max-content;
+    padding: 0 1vw;
+    width: 70%;
+}
+#tst ul{
+    justify-content: space-around;
+    padding: 15px;
+    box-sizing: border-box;
+    width: -webkit-fill-available;
+}

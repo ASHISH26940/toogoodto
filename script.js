@@ -167,7 +167,7 @@
             //     break;
             // }
             
-            tst.style.width = "50%";
+            // tst.style.width = "50%";
             tst.style.height = "2vw";
             tst.style.paddingTop = "2vw";
             tst.style.top = "48%";
@@ -196,11 +196,12 @@
             // tst[0].style.backgroundColor = "rgb(195, 216, 197)";
             // tst[1].style.backgroundColor = "rgb(245, 223, 207)";
             // tst[2].style.backgroundColor = "rgb(255, 255, 255)";
-            tst.style.height = "2vw";
+            tst.style.height = "max-content";
             tst.style.borderRadius = "50px";
-            tst.style.width = "50%";
-            tst.style.paddingTop = 0;
-            tst.style.paddingBottom = "0vw";
+            // tst.style.width = "70%";
+            tst.style.padding = "0 1vw";
+            // tst.style.paddingTop = 0;
+            // tst.style.paddingBottom = "0vw";
             tst.style.position = "absolute";
             tst.style.zIndex = "9";
             // tst.style.backgroundColor = "rgb(195, 216, 197)"; // Set the original color
