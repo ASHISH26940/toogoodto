@@ -1018,3 +1018,6 @@ body {
     box-sizing: border-box;
     width: -webkit-fill-available;
 }
+.text{
+    font-family: sans-serif;
+}
