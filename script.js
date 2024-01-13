@@ -260,3 +260,17 @@ icon.onclick = function () {
     icon.src = "moon-icon.png";
   }
 }
+
+let infoInnerDiv = document.querySelectorAll(".info-inner-div")
+infoInnerDiv.forEach((div)=>{
+  div.addEventListener("mouseenter",function(){
+    div.querySelector("img").style.height = "100%"
+    div.querySelector("p").style.opacity = 0
+
+  })
+  div.addEventListener("mouseleave",function(){
+    div.querySelector("img").style.height = "70%"
+    div.querySelector("p").style.opacity = 1
+
+  })
+})
