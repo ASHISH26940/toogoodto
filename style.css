@@ -374,6 +374,12 @@ body {
     position: relative;
 }
 
+.packet:hover {
+    border: 4px solid rgb(39, 248, 7);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 0 greenyellow, 5px 5px 5px 0 #00bcd4;
+}
+
 .overlay-content {
     display: flex;
     flex-direction: column;
@@ -382,13 +388,14 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
     transition: 0.6s;
+    transition: transform 0.6s;
     border-radius: 50%;
 }
 
@@ -398,7 +405,7 @@ body {
 
 .overlay-head {
     font-size: 1.5vw;
-    color: #fff;
+    color: #ffe100;
     text-align: center;
     font-weight: bold;
 }
@@ -409,6 +416,18 @@ body {
     text-align: center;
     font-weight: 10;
 }
+
+.overlay-content>* {
+    transform: translateY(30px);
+    transition: transform 0.6s;
+}
+
+.overlay-content:hover>* {
+    transform: translateY(0px);
+    /* border: 1px solid greenyellow; */
+}
+
+
 
 
 
