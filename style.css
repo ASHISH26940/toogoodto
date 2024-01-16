@@ -50,6 +50,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    
+    transition: color .2s;
 }
 
 #links {
@@ -76,16 +78,18 @@ body {
     font-weight: 500;
     font-size: 14px;
     margin: 0 20px;
+    
+    transition: color .2s;
 }
 
 #icons {
-    padding: 10px;
+    padding: 5px;
     border-radius: 50px;
     background-color: #F7F7F7;
 }
 
 #nav-part2 #icons i {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 20px;
     font-weight: 100;
 }
@@ -260,10 +264,10 @@ body {
     padding-top: 2vw;
 } */
 
-#page2 .elem #tst:hover {
-    /* padding-bottom: 10vw; */
-    /* padding-top: 2vw; */
-}
+/* #page2 .elem #tst:hover {
+    padding-bottom: 10vw;
+    padding-top: 2vw;
+} */
 
 #tst ul {
     display: flex;
@@ -1000,6 +1004,7 @@ body {
 
 #icons {
     display: flex;
+    align-items: center;
 }
 
 .menu-cart-icons {
@@ -1027,7 +1032,7 @@ body {
 }
 
 #icon {
-    width: 25px;
+    width: 20px;
     cursor: pointer;
 }
 
@@ -1254,4 +1259,206 @@ span.text {
     .subhead-sec1 {
         font-size: 32px;
     }
+}
+
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 30px;
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.ham6 .top {
+    stroke-dasharray: 40 172;
+}
+
+.ham6 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham6 .bottom {
+    stroke-dasharray: 40 172;
+}
+
+.ham6.active .top {
+    stroke-dashoffset: -132px;
+}
+
+.ham6.active .middle {
+    stroke-dashoffset: -71px;
+}
+
+.ham6.active .bottom {
+    stroke-dashoffset: -132px;
+}
+
+#topbar {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    transition: height .2s ease-out;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    color: white;
+}
+
+#topbar.showTopBar {
+    height: 100vh;
+    overflow: unset;
+    transition: height .2s ease-out;
+}
+
+#nav {
+    z-index: 3;
+}
+
+#nav.dropped #nav-part1 {
+    color: white;
+    transition: color .2s;
+}
+
+#nav.dropped #nav-part2 #links a {
+    color: white;
+    transition: color .2s;
+}
+
+
+
+#div-left {
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#div-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1em;
+
+}
+
+#div-right div {
+    /* font-size: 5em; */
+    font-family: sans-serif;
+    font-weight: 900;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+#div-right div .right-div-child {
+    font-family: sans-serif;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    font-size: 5rem;
+    line-height: 5rem;
+    transform: translateY(100%);
+    transition: transform .02s ease-in ;
+    /* transition-delay: .4s; */
+}
+#div-right div .right-div-child.move-up{
+    transform: translateY(0);
+    /* transition-delay: .4s; */
+    transition: transform .1s ease-in .3s;
+}
+#div-left>div{
+    width: inherit;
+    height: 20vh;
+    margin-left: 20px;
+
+}
+
+.left-top-child{
+    margin-bottom: 30px;
+}
+.left-top-child p{
+    
+    font-family: sans-serif;
+    font-size: small;
+    color: #979797;
+    transform: translateY(150%);
+    opacity: 0;
+    transition: all .02s ease-in;
+
+}
+.left-bottom-child>div{
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: small;
+}
+.c1.move-up-child p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .1s ease-out .9s;
+}
+.c2.move-up-child p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .1s ease-out .8s;
+}
+.c3.move-up-child p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .1s ease-out .7s;
+}
+.left-bottom-child{
+    opacity: 0;
+}
+.d1.show-child{
+    opacity: 1;
+    transition: all .1s ease-out .9s;
+}
+.d2.show-child{
+    opacity: 1;
+    transition: all .1s ease-out .8s;
+}
+.d3.show-child{
+    opacity: 1;
+    transition: all .1s ease-out .7s;
+}
+
+@media screen and (max-width:1000px) {
+
+    #topbar{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    
+    }
+    #topbar>div{
+        width: inherit;
+    }
+    #div-right{
+        padding-right: 30px;
+    }
+    #div-right div .right-div-child{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    #div-left>div{
+        margin: 0 21px;
+    }
+    
 }
