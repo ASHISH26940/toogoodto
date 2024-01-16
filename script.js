@@ -251,24 +251,37 @@ document.querySelectorAll(".img").forEach(function (element) {
 
 
 var icon = document.getElementById("icon");
+var packet = document.getElementsByClassName("packet");
+var overlay_head = document.getElementsByClassName("overlay-head");
+var overlay_content = document.getElementsByClassName("overlay-content");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
     icon.src = "sun-icon2.png";
+    for (let i = 0; packet.length; i++) {
+      packet[i].classList.add("packet1");
+      overlay_head[i].classList.add("overlay-head1");
+      overlay_content[i].classList.add("overlay-content1");
+    }
   }
   else {
     icon.src = "moon-icon.png";
+    for (let i = 0; packet.length; i++) {
+      packet[i].classList.remove("packet1");
+      overlay_head[i].classList.remove("overlay-head1");
+      overlay_content[i].classList.remove("overlay-content1");
+    }
   }
 }
 
 let infoInnerDiv = document.querySelectorAll(".info-inner-div")
-infoInnerDiv.forEach((div)=>{
-  div.addEventListener("mouseenter",function(){
+infoInnerDiv.forEach((div) => {
+  div.addEventListener("mouseenter", function () {
     div.querySelector("img").style.height = "100%"
     div.querySelector("p").style.opacity = 0
 
   })
-  div.addEventListener("mouseleave",function(){
+  div.addEventListener("mouseleave", function () {
     div.querySelector("img").style.height = "70%"
     div.querySelector("p").style.opacity = 1
 
