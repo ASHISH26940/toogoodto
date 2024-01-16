@@ -274,3 +274,21 @@ infoInnerDiv.forEach((div)=>{
 
   })
 })
+
+document.querySelector(".ham6").addEventListener("click",function(){
+  document.querySelector("#topbar").classList.toggle("showTopBar");
+  document.querySelector("#nav").classList.toggle("dropped");
+  document.querySelectorAll(".line").forEach((line)=>{
+    line.classList.toggle("cross")
+  });
+  document.querySelectorAll(".right-div-child").forEach((p)=>{
+    p.classList.toggle("move-up")
+  })
+  document.querySelectorAll(".left-top-child").forEach((div)=>{
+    div.classList.toggle("move-up-child")
+  })
+  document.querySelectorAll(".left-bottom-child").forEach((div)=>{
+    div.classList.toggle("show-child")
+  })
+
+})
