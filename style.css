@@ -621,20 +621,28 @@ body {
     padding-top: 2vw;
     font-weight: 10;
     font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    transition:  ease-in-out 0.4s;
+    border-radius: 3%;
 }
-
+.main-sec1:hover{
+    box-shadow: 0 0 10px rgba(113, 113, 113, 0.5);
+}
 .subhead-sec1 {
     font-family: 'futura';
     text-align: left;
     font-size: 1.5vw;
+    
 }
 
 .img2 img {
     width: 44%;
     height: 100%;
     object-fit: cover;
+    transition: ease-in-out 0.4s;
 }
-
+.img2 img:hover{
+    box-shadow: 0 0 13px rgba(5, 5, 5, 0.5);
+}
 .img2 {
     margin-left: 3vw;
 }
@@ -643,6 +651,13 @@ body {
     text-align: left;
     margin-top: 3vw;
     font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+.part3:hover{
+    color: #404040;
+    scale:1.02;
+    font-weight: bolder;
 }
 
 /* page5
@@ -1019,11 +1034,14 @@ body {
 }
 
 #btn {
-    transition: all 0.3s ease-in-out;
+    
     cursor: pointer;
+    transition: cubic-bezier(1,-0.25, 0, 1.06) 0.3s;
 }
 
 #btn:hover {
+    transition: cubic-bezier(1,-0.25, 0, 1.06) 0.3s;
+    font-size: 101%;
     transform: scale(1.05);
 }
 
@@ -1271,6 +1289,19 @@ span.text {
     -ms-user-select: none;
     user-select: none;
     width: 30px;
+    /* border:2px solid blue; */
+    transition: ease 0.4s;
+
+}
+
+.ham:hover{
+    scale:1.19;
+}
+
+.ham:hover .line{
+    stroke: #2d2d2d;
+    stroke-width:5;
+    margin:1%;
 }
 
 .line {
@@ -1279,6 +1310,10 @@ span.text {
     stroke: #000;
     stroke-width: 2.5;
     stroke-linecap: round;
+}
+
+.line:hover{
+    
 }
 
 .ham6 .top {
