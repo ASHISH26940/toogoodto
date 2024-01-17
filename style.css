@@ -50,7 +50,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    
+
     transition: color .2s;
 }
 
@@ -78,7 +78,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     margin: 0 20px;
-    
+
     transition: color .2s;
 }
 
@@ -202,7 +202,7 @@ body {
     border-radius: 50px;
     width: 50%;
     position: absolute;
-    z-index: 9;
+    z-index: 0;
     background-color: rgb(245, 223, 207);
     padding-right: 1vw;
     font-weight: 50;
@@ -938,7 +938,7 @@ body {
         width: 70%;
         position: absolute;
         z-index: 9;
-        background-color: red;
+        /* background-color: red; */
 
     }
 
@@ -1306,7 +1306,7 @@ span.text {
 }
 
 #topbar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 0;
     background-color: black;
@@ -1376,26 +1376,29 @@ span.text {
     font-size: 5rem;
     line-height: 5rem;
     transform: translateY(100%);
-    transition: transform .02s ease-in ;
+    transition: transform .02s ease-in;
     /* transition-delay: .4s; */
 }
-#div-right div .right-div-child.move-up{
+
+#div-right div .right-div-child.move-up {
     transform: translateY(0);
     /* transition-delay: .4s; */
     transition: transform .1s ease-in .3s;
 }
-#div-left>div{
+
+#div-left>div {
     width: inherit;
     height: 20vh;
     margin-left: 20px;
 
 }
 
-.left-top-child{
+.left-top-child {
     margin-bottom: 30px;
 }
-.left-top-child p{
-    
+
+.left-top-child p {
+
     font-family: sans-serif;
     font-size: small;
     color: #979797;
@@ -1404,61 +1407,166 @@ span.text {
     transition: all .02s ease-in;
 
 }
-.left-bottom-child>div{
+
+.left-bottom-child>div {
     font-family: sans-serif;
     margin-bottom: 5px;
     font-size: small;
 }
-.c1.move-up-child p{
+
+.c1.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .9s;
 }
-.c2.move-up-child p{
+
+.c2.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .8s;
 }
-.c3.move-up-child p{
+
+.c3.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .7s;
 }
-.left-bottom-child{
+
+.left-bottom-child {
     opacity: 0;
 }
-.d1.show-child{
+
+.d1.show-child {
     opacity: 1;
     transition: all .1s ease-out .9s;
 }
-.d2.show-child{
+
+.d2.show-child {
     opacity: 1;
     transition: all .1s ease-out .8s;
 }
-.d3.show-child{
+
+.d3.show-child {
     opacity: 1;
     transition: all .1s ease-out .7s;
 }
 
 @media screen and (max-width:1000px) {
 
-    #topbar{
+    #topbar {
         flex-direction: column-reverse;
         justify-content: space-evenly;
-    
+
     }
-    #topbar>div{
+
+    #topbar>div {
         width: inherit;
     }
-    #div-right{
+
+    #div-right {
         padding-right: 30px;
     }
-    #div-right div .right-div-child{
+
+    #div-right div .right-div-child {
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
-    #div-left>div{
+
+    #div-left>div {
         margin: 0 21px;
+    }
+
+    .page3>.img {
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .page3>.img {
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .page3>.img {
+        height: 25vh;
+    }
+
+    .page3 {
+        min-height: 80vh;
+    }
+
+    .img h1 {
+        font-size: larger;
+        font-size: small;
+        font-weight: normal;
+        padding: 0 15px;
+    }
+
+    .page-3-intro {
+        flex-direction: column;
+    }
+
+    .heading-page-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading-page-3 h1 {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+
+    .txt-page-3 {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        padding-right: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #line {
+        width: 60%;
+    }
+    .page4{
+        min-height: 30vh;
+    }
+
+}
+@media screen and (max-width:900px) {
+    .page-3-intro {
+        flex-direction: column;
+    }
+
+    .heading-page-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading-page-3 h1 {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+
+    .txt-page-3 {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        padding-right: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #line {
+        width: 60%;
+    }
+    .page4{
+        min-height: 30vh;
     }
     
 }
