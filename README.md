@@ -68,7 +68,7 @@ The project structure is organized as follows:
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f331/512.gif" alt="🌱" width="32" height="32">
 </picture> Getting Started</h2>
 
-To view the website you can follow the given steps
+To view the website you can follow the given steps 
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
