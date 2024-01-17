@@ -78,6 +78,9 @@ To view the website you can follow the given steps
 2. **Open in Browser**: Open the `index.html` file in your preferred web browser to launch the Too Good Co Clone.
 3. **Explore and Enjoy**: Navigate through the website and experience the Too Good Co Clone!
 
+or you can directly click on the deploy link below <br>
+https://toogoodto.vercel.app/
+
 ## Contribution Guidelines
 # Project Name
 
