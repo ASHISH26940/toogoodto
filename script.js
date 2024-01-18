@@ -318,3 +318,32 @@ var observer = new IntersectionObserver(function(entries, observer) {
   });
 }, { threshold: 0.5 });
 observer.observe(video);
+gsap.from("#img1 , #img2",{
+    x:100,
+    duration:2,
+    opacity:0,
+    scrollTrigger:{
+       trigger:".page5",
+      //  markers:true,
+       start: "top 100%",
+       end:"top -30%",
+       scroller:"#main",
+       scrub:5,
+  }
+}
+);
+gsap.from("#head1 ,#head2, #text1",{
+  x:-100,
+  duration:2,
+  opacity:0,
+  stagger:0.4,
+  scrollTrigger:{
+     trigger:".page5",
+    //  markers:true,
+     start: "top 100%",
+     end:"top -30%",
+     scroller:"#main",
+     scrub:5,
+}
+}
+);
