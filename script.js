@@ -305,3 +305,16 @@ document.querySelector(".ham6").addEventListener("click",function(){
   })
 
 })
+
+/*Footer animation*/
+var video = document.querySelector(".video-background");
+var observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+observer.observe(video);
