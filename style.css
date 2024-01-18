@@ -50,7 +50,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    
+
     transition: color .2s;
 }
 
@@ -78,7 +78,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     margin: 0 20px;
-    
+
     transition: color .2s;
 }
 
@@ -268,6 +268,46 @@ body {
     padding-bottom: 10vw;
     padding-top: 2vw;
 } */
+
+/* Scroll back button */
+
+#scrollBackButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    vertical-align: center;
+    box-shadow: 0 0 20px #00f94b;
+    text-align: center;
+}
+
+#scrollBackButton img {
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+#scrollBackButton:hover {
+    background-color: #0056b3;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2.8rem;
+    /* drop-shadow: 0 0 0px #00fd4b; */
+    /* box-shadow: inset 0 0 0 6px green; */
+    text-shadow: 0 0 20px #00f94b;
+}
 
 #tst ul {
     display: flex;
@@ -612,6 +652,10 @@ body {
     width: 40%;
     padding-left: 2vw;
     margin-right: 6vw;
+}
+
+.main {
+    position: relative !important;
 }
 
 .main-sec1 {
@@ -1376,26 +1420,29 @@ span.text {
     font-size: 5rem;
     line-height: 5rem;
     transform: translateY(100%);
-    transition: transform .02s ease-in ;
+    transition: transform .02s ease-in;
     /* transition-delay: .4s; */
 }
-#div-right div .right-div-child.move-up{
+
+#div-right div .right-div-child.move-up {
     transform: translateY(0);
     /* transition-delay: .4s; */
     transition: transform .1s ease-in .3s;
 }
-#div-left>div{
+
+#div-left>div {
     width: inherit;
     height: 20vh;
     margin-left: 20px;
 
 }
 
-.left-top-child{
+.left-top-child {
     margin-bottom: 30px;
 }
-.left-top-child p{
-    
+
+.left-top-child p {
+
     font-family: sans-serif;
     font-size: small;
     color: #979797;
@@ -1404,61 +1451,73 @@ span.text {
     transition: all .02s ease-in;
 
 }
-.left-bottom-child>div{
+
+.left-bottom-child>div {
     font-family: sans-serif;
     margin-bottom: 5px;
     font-size: small;
 }
-.c1.move-up-child p{
+
+.c1.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .9s;
 }
-.c2.move-up-child p{
+
+.c2.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .8s;
 }
-.c3.move-up-child p{
+
+.c3.move-up-child p {
     transform: translateY(0);
     opacity: 1;
     transition: all .1s ease-out .7s;
 }
-.left-bottom-child{
+
+.left-bottom-child {
     opacity: 0;
 }
-.d1.show-child{
+
+.d1.show-child {
     opacity: 1;
     transition: all .1s ease-out .9s;
 }
-.d2.show-child{
+
+.d2.show-child {
     opacity: 1;
     transition: all .1s ease-out .8s;
 }
-.d3.show-child{
+
+.d3.show-child {
     opacity: 1;
     transition: all .1s ease-out .7s;
 }
 
 @media screen and (max-width:1000px) {
 
-    #topbar{
+    #topbar {
         flex-direction: column-reverse;
         justify-content: space-evenly;
-    
+
     }
-    #topbar>div{
+
+    #topbar>div {
         width: inherit;
     }
-    #div-right{
+
+    #div-right {
         padding-right: 30px;
     }
-    #div-right div .right-div-child{
+
+    #div-right div .right-div-child {
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
-    #div-left>div{
+
+    #div-left>div {
         margin: 0 21px;
     }
-    
+
 }
