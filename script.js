@@ -257,7 +257,7 @@ var overlay_content = document.getElementsByClassName("overlay-content");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "sun-icon2.png";
+    icon.src = "sun-icon2.webp";
     for (let i = 0; packet.length; i++) {
       packet[i].classList.add("packet1");
       overlay_head[i].classList.add("overlay-head1");
