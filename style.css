@@ -380,9 +380,9 @@ body {
 
 
 .packet1:hover {
-    border: 4px solid rgb(39, 248, 7) !important;
+    /* border: 4px solid rgb(39, 248, 7) !important; */
     border-radius: 50% !important;
-    box-shadow: 0 0 10px 0 greenyellow, 0 0 10px 0 #00bcd4 !important;
+    /* box-shadow: 0 0 10px 0 greenyellow, 0 0 10px 0 #00bcd4 !important; */
 }
 
 .overlay-content {
@@ -407,6 +407,12 @@ body {
 .overlay-content1 {
     color: black;
     background: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .overlay-content1 p {
@@ -681,22 +687,36 @@ body {
     color: #F7F7F7;
 }
 
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Set the video behind the content */
+}
+
 .page6-head {
     position: relative;
     display: flex;
     gap: 20px;
     justify-content: center;
     overflow-wrap: break-word;
+    z-index: 100;
 }
 
 .page6-head h1 {
     text-align: center;
+    z-index: 100;
 }
 
 .ri-arrow-right-line {
     position: relative;
     top: 0.01vh;
     font-size: 2.5rem;
+    filter: invert(100%);
+    z-index: 100;
 }
 
 .l-items {
@@ -708,6 +728,7 @@ body {
     margin-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+    z-index: 100;
 }
 
 /* .connect-with-us {
@@ -735,6 +756,7 @@ body {
 .two-good-svg>img {
     height: 26vh;
     filter: invert(100%);
+    z-index: 100;
 }
 
 .terms-and-conditions {
@@ -744,6 +766,7 @@ body {
     align-items: center;
     margin-bottom: 30px;
     gap: 10px;
+    z-index: 100;
 }
 
 .end-note {
@@ -752,10 +775,12 @@ body {
     overflow-wrap: break-word;
     text-align: center;
     margin-top: 30px;
+    z-index: 100;
 }
 
 .last-text {
     text-align: center;
+    z-index: 100;
 }
 
 @media(max-width:481px) {
@@ -1486,6 +1511,11 @@ span.text {
     transition: all .1s ease-out .7s;
 }
 
+.overlay-content img {
+    width: 60px;
+    height: 60px;
+}
+
 @media screen and (max-width:1000px) {
 
     #topbar {
@@ -1567,11 +1597,17 @@ span.text {
     #line {
         width: 60%;
     }
-    .page4{
+
+    .page4 {
         min-height: 30vh;
     }
 
+    .overlay-content {
+        justify-content: flex-end;
+    }
+
 }
+
 @media screen and (max-width:900px) {
     .page-3-intro {
         flex-direction: column;
@@ -1600,8 +1636,23 @@ span.text {
     #line {
         width: 60%;
     }
-    .page4{
+
+    .page4 {
         min-height: 30vh;
     }
-    
+
+}
+
+#page2 .elem .dets,
+#page2 .elem .dets1,
+#page2 .elem .dets2 {
+    z-index: 0;
+}
+
+@media screen and (max-width:500px) {
+    .overlay-content img {
+        width: 30px;
+        height: 30px;
+    }
+
 }

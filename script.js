@@ -257,7 +257,7 @@ var overlay_content = document.getElementsByClassName("overlay-content");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "sun-icon2.png";
+    icon.src = "sun-icon2.webp";
     for (let i = 0; packet.length; i++) {
       packet[i].classList.add("packet1");
       overlay_head[i].classList.add("overlay-head1");
@@ -305,3 +305,45 @@ document.querySelector(".ham6").addEventListener("click",function(){
   })
 
 })
+
+/*Footer animation*/
+var video = document.querySelector(".video-background");
+var observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+observer.observe(video);
+gsap.from("#img1 , #img2",{
+    x:100,
+    duration:2,
+    opacity:0,
+    scrollTrigger:{
+       trigger:".page5",
+      //  markers:true,
+       start: "top 100%",
+       end:"top -30%",
+       scroller:"#main",
+       scrub:5,
+  }
+}
+);
+gsap.from("#head1 ,#head2, #text1",{
+  x:-100,
+  duration:2,
+  opacity:0,
+  stagger:0.4,
+  scrollTrigger:{
+     trigger:".page5",
+    //  markers:true,
+     start: "top 100%",
+     end:"top -30%",
+     scroller:"#main",
+     scrub:5,
+}
+}
+);
