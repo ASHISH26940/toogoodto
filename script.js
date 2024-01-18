@@ -38,7 +38,7 @@ function locomotiveAnimation() {
 
   ScrollTrigger.refresh();
 }
-locomotiveAnimation();
+// locomotiveAnimation();
 
 function navbarAnimation() {
   gsap.to("#nav-part1 svg", {
@@ -288,19 +288,19 @@ infoInnerDiv.forEach((div) => {
   })
 })
 
-document.querySelector(".ham6").addEventListener("click",function(){
+document.querySelector(".ham6").addEventListener("click", function () {
   document.querySelector("#topbar").classList.toggle("showTopBar");
   document.querySelector("#nav").classList.toggle("dropped");
-  document.querySelectorAll(".line").forEach((line)=>{
+  document.querySelectorAll(".line").forEach((line) => {
     line.classList.toggle("cross")
   });
-  document.querySelectorAll(".right-div-child").forEach((p)=>{
+  document.querySelectorAll(".right-div-child").forEach((p) => {
     p.classList.toggle("move-up")
   })
-  document.querySelectorAll(".left-top-child").forEach((div)=>{
+  document.querySelectorAll(".left-top-child").forEach((div) => {
     div.classList.toggle("move-up-child")
   })
-  document.querySelectorAll(".left-bottom-child").forEach((div)=>{
+  document.querySelectorAll(".left-bottom-child").forEach((div) => {
     div.classList.toggle("show-child")
   })
 
@@ -308,8 +308,8 @@ document.querySelector(".ham6").addEventListener("click",function(){
 
 /*Footer animation*/
 var video = document.querySelector(".video-background");
-var observer = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(function(entry) {
+var observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       video.play();
     } else {
@@ -318,3 +318,4 @@ var observer = new IntersectionObserver(function(entries, observer) {
   });
 }, { threshold: 0.5 });
 observer.observe(video);
+
