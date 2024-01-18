@@ -380,9 +380,9 @@ body {
 
 
 .packet1:hover {
-    border: 4px solid rgb(39, 248, 7) !important;
+    /* border: 4px solid rgb(39, 248, 7) !important; */
     border-radius: 50% !important;
-    box-shadow: 0 0 10px 0 greenyellow, 0 0 10px 0 #00bcd4 !important;
+    /* box-shadow: 0 0 10px 0 greenyellow, 0 0 10px 0 #00bcd4 !important; */
 }
 
 .overlay-content {
@@ -407,6 +407,12 @@ body {
 .overlay-content1 {
     color: black;
     background: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .overlay-content1 p {
@@ -1451,6 +1457,11 @@ span.text {
     transition: all .1s ease-out .7s;
 }
 
+.overlay-content img {
+    width: 60px;
+    height: 60px;
+}
+
 @media screen and (max-width:1000px) {
 
     #topbar {
@@ -1532,11 +1543,17 @@ span.text {
     #line {
         width: 60%;
     }
-    .page4{
+
+    .page4 {
         min-height: 30vh;
     }
 
+    .overlay-content {
+        justify-content: flex-end;
+    }
+
 }
+
 @media screen and (max-width:900px) {
     .page-3-intro {
         flex-direction: column;
@@ -1565,8 +1582,23 @@ span.text {
     #line {
         width: 60%;
     }
-    .page4{
+
+    .page4 {
         min-height: 30vh;
     }
-    
+
+}
+
+#page2 .elem .dets,
+#page2 .elem .dets1,
+#page2 .elem .dets2 {
+    z-index: 0;
+}
+
+@media screen and (max-width:500px) {
+    .overlay-content img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
