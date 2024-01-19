@@ -336,7 +336,7 @@ gsap.from("#head1 ,#head2, #text1", {
   x: -100,
   duration: 2,
   opacity: 0,
-  stagger: 0.4,
+  // stagger: 0.4,
   scrollTrigger: {
     trigger: ".page5",
     //  markers:true,
