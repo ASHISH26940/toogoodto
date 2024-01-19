@@ -1337,9 +1337,7 @@ span.text {
     stroke-linecap: round;
 }
 
-.line:hover{
-    
-}
+
 
 .ham6 .top {
     stroke-dasharray: 40 172;
@@ -1655,4 +1653,10 @@ span.text {
         height: 30px;
     }
 
+}
+
+.catering,.catering:visited{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
 }

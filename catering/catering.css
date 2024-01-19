@@ -30,7 +30,7 @@ nav>div {
     height: 100%;
 }
 
-nav>div>img {
+nav div img {
     height: 100%;
 }
 
@@ -191,3 +191,4 @@ main>div>div>img{
 .box:hover img{
     filter: contrast(0.5);
 }
+
