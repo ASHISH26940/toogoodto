@@ -288,19 +288,19 @@ infoInnerDiv.forEach((div) => {
   })
 })
 
-document.querySelector(".ham6").addEventListener("click",function(){
+document.querySelector(".ham6").addEventListener("click", function () {
   document.querySelector("#topbar").classList.toggle("showTopBar");
   document.querySelector("#nav").classList.toggle("dropped");
-  document.querySelectorAll(".line").forEach((line)=>{
+  document.querySelectorAll(".line").forEach((line) => {
     line.classList.toggle("cross")
   });
-  document.querySelectorAll(".right-div-child").forEach((p)=>{
+  document.querySelectorAll(".right-div-child").forEach((p) => {
     p.classList.toggle("move-up")
   })
-  document.querySelectorAll(".left-top-child").forEach((div)=>{
+  document.querySelectorAll(".left-top-child").forEach((div) => {
     div.classList.toggle("move-up-child")
   })
-  document.querySelectorAll(".left-bottom-child").forEach((div)=>{
+  document.querySelectorAll(".left-bottom-child").forEach((div) => {
     div.classList.toggle("show-child")
   })
 
@@ -308,8 +308,8 @@ document.querySelector(".ham6").addEventListener("click",function(){
 
 /*Footer animation*/
 var video = document.querySelector(".video-background");
-var observer = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(function(entry) {
+var observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       video.play();
     } else {
@@ -318,32 +318,32 @@ var observer = new IntersectionObserver(function(entries, observer) {
   });
 }, { threshold: 0.5 });
 observer.observe(video);
-gsap.from("#img1 , #img2",{
-    x:100,
-    duration:2,
-    opacity:0,
-    scrollTrigger:{
-       trigger:".page5",
-      //  markers:true,
-       start: "top 100%",
-       end:"top -30%",
-       scroller:"#main",
-       scrub:5,
+gsap.from("#img1 , #img2", {
+  x: 100,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".page5",
+    //  markers:true,
+    start: "top 100%",
+    end: "top -30%",
+    scroller: "#main",
+    scrub: 5,
   }
 }
 );
-gsap.from("#head1 ,#head2, #text1",{
-  x:-100,
-  duration:2,
-  opacity:0,
-  stagger:0.4,
-  scrollTrigger:{
-     trigger:".page5",
+gsap.from("#head1 ,#head2, #text1", {
+  x: -100,
+  duration: 2,
+  opacity: 0,
+  // stagger: 0.4,
+  scrollTrigger: {
+    trigger: ".page5",
     //  markers:true,
-     start: "top 100%",
-     end:"top -30%",
-     scroller:"#main",
-     scrub:5,
-}
+    start: "top 100%",
+    end: "top -30%",
+    scroller: "#main",
+    scrub: 5,
+  }
 }
 );
