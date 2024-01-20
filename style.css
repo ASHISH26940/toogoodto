@@ -1660,3 +1660,146 @@ span.text {
     font-family: sans-serif;
     color: white;
 }
+
+
+@media screen and (max-width:390px){
+    #page2 .elem{
+        height: 50%;
+        width: 100%;
+    }
+.main-sec1{
+       font-size: 1rem;
+}
+.subhead-sec1{
+    font-size: 1.6rem;
+}
+#head2 .part3{
+    font-size: 1.6rem;
+}
+    
+}
+
+@media screen and (max-width:450px){
+
+    #page2 .elem{
+        height: 50%;
+        width: 100%;
+    }
+.main-sec1{
+       font-size: 1rem;
+}
+.subhead-sec1{
+    font-size: 1.6rem;
+}
+#head2 .part3{
+    font-size: 1.6rem;
+}
+    
+}
+
+@media screen and (max-width:800px) {
+    #video-container{
+        height: 90%;
+    }
+    #page2{
+        flex-direction: column;
+    }
+    #page2 .elem{
+        height: 50%;
+        width: 90%;
+    }
+    .scroll-container{
+        height: 30%;
+        width: 70%;
+    }
+    .main-sec1{
+        font-size: 1.70rem;
+ }
+ .subhead-sec1{
+     font-size: 1.90rem;
+ }
+ #head2 .part3{
+     font-size: 1.90rem;
+ }
+
+}
+@media screen and (max-width:850px) {
+    #video-container{
+        height: 70%;
+    }
+    #page2{
+        flex-direction: column;
+    }
+    #page2 .elem{
+        height: 50%;
+        width: 95%;
+    }
+    .scroll-container{
+        height: 30%;
+        width: 70%;
+    }
+    .txt-page-3{
+        font-size: 1.56rem;
+    }
+    .txt-page-3 p{
+        font-size:16px
+    }
+    .flex4{
+        font-size: 19px;
+    }
+
+ }
+
+@media screen and (max-width:1000px) {
+    #video-container{
+        height: 70%;
+    }
+    #page2{
+        flex-direction: column;
+    }
+    #page2 .elem{
+        height: 50%;
+        width: 95%;
+    }
+    .scroll-container{
+        height: 30%;
+        width: 70%;
+    }
+    .txt-page-3{
+        font-size: 1.56rem;
+    }
+    .txt-page-3 p{
+        font-size:16px
+    }
+    .flex4{
+        font-size: 19px;
+    }
+
+ }
+@media screen and (max-width:1040px) {
+    #video-container{
+        height: 70%;
+    }
+    #page2{
+        flex-direction: column;
+    }
+    #page2 .elem{
+        height: 50%;
+        width: 95%;
+    }
+    .scroll-container{
+        height: 30%;
+        width: 70%;
+    }
+    .txt-page-3{
+        font-size: 1.56rem;
+    }
+    .txt-page-3 p{
+        font-size:16px
+    }
+    .flex4{
+        font-size: 19px;
+    }
+
+ }
+
