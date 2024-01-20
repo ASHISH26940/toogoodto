@@ -52,6 +52,8 @@ The project structure is organized as follows:
 ![Screenshot (351)](https://github.com/lord-cyclone100/toogoodto/assets/121711381/559ac61a-bcf8-4c0d-b391-9d815dcc3fa4)
 ![Screenshot (350)](https://github.com/lord-cyclone100/toogoodto/assets/121711381/3cc8c1a1-7ad3-4e00-878d-6479ab4618df)
 ![Screenshot (349)](https://github.com/lord-cyclone100/toogoodto/assets/121711381/da155980-1f93-4f64-b31c-99b1bbdc5ed1)
+![image](https://github.com/ASHISH26940/toogoodto/assets/130065095/46835c3c-f7d8-41ce-832e-b9b04aa6be43)
+
 
 <br>
 <h3 align="left"><img src="https://raw.githubusercontent.com/dsnehasish74/dsnehasish74/main/techstack.gif" align="center"
@@ -171,3 +173,9 @@ If the original repository has been updated, you can sync your fork to include t
 Feedbacks and suggestions are a great way for the overall improvement of any project. If you have any feedback, questions, or suggestions, feel free to open an issue in the repository. We welcome contributions from developers of all skill levels!
 
 Happy coding! 🧑🏻‍💻🚀
+
+<h2>Let's eating</h2>
+
+<p align="center" ><img 
+ src="https://media.giphy.com/media/SasDDqOSRclNu/giphy.gif" width="50%"/></p>
+ 
